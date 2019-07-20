@@ -1,16 +1,16 @@
-function procesar_selección_HTML(opcion) {	
+function procesar_seleccion_HTML(opcion) {	
 	var texto =texto_HTML.value;
   	var inicio=texto_HTML.selectionStart;
   	var fin   =texto_HTML.selectionEnd;	
-  	$("#texto_HTML").val(procesar_selección(texto, inicio, fin, opcion));
-  	Resultado.innerHTML = procesar_selección(texto, inicio, fin, opcion);
+  	$("#texto_HTML").val(procesar_seleccion(texto, inicio, fin, opcion));
+  	Resultado.innerHTML = procesar_seleccion(texto, inicio, fin, opcion);
 }
 
-function procesar_selección(texto, inicio_selección, fin_selección, opcion) {
+function procesar_seleccion(texto, inicio_seleccion, fin_seleccion, opcion) {
   	var longitud=texto.length;
-  	var inicio=texto.slice(0, inicio_selección);
-  	var medio =texto.slice(inicio_selección, fin_selección);
-  	var fin   =texto.slice(fin_selección, longitud);
+  	var inicio=texto.slice(0, inicio_seleccion);
+  	var medio =texto.slice(inicio_seleccion, fin_seleccion);
+  	var fin   =texto.slice(fin_seleccion, longitud);
 
   	switch (opcion){
   		case 1: 				
