@@ -45,6 +45,12 @@ function SeleccionarLenguaje(){
 		case "1":
 			lenguaje = "sql";
 			break;
+		case "2":
+			lenguaje = "html";
+			break;	
+		case "3":
+			lenguaje = "js";
+			break;		
 	}
 
 	if(lenguaje == ""){
