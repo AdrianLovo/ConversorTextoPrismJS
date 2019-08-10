@@ -12,7 +12,8 @@ var vm = new Vue({
 			{valor: 0, texto: 'Seleccionar Lenguaje'}, 
 			{valor: 1, texto: 'SQL (Structured Query Language)'}, 
 			{valor: 2, texto: 'HTML'},
-			{valor: 3, texto: 'JavaScript'}
+			{valor: 3, texto: 'JavaScript'},
+			{valor: 4, texto: 'Markdown'}
 		],
 
 		Botones:[
@@ -49,6 +50,9 @@ var vm = new Vue({
 				case 3:
 					lenguaje = "js";
 					break;		
+				case 4:
+					lenguaje = "markdown";
+					break;	
 			}
 
 			if(this.opcion == 0){
